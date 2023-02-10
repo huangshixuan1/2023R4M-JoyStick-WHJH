@@ -21,7 +21,7 @@ basic.forever(function () {
             . . . # .
             . . . . #
             `)
-        basic.pause(100)
+        basic.pause(50)
         basic.clearScreen()
     } else if (KSB045.getJoystickValue(KSB045.valueType.Y) < 500 && KSB045.getJoystickValue(KSB045.valueType.X) >= 400 && KSB045.getJoystickValue(KSB045.valueType.Y) < 600) {
         radio.sendNumber(8)
@@ -32,7 +32,7 @@ basic.forever(function () {
             . # . # .
             # . . . #
             `)
-        basic.pause(100)
+        basic.pause(50)
         basic.clearScreen()
     } else if (KSB045.getJoystickValue(KSB045.valueType.X) > 520 && KSB045.getJoystickValue(KSB045.valueType.Y) >= 400 && KSB045.getJoystickValue(KSB045.valueType.Y) < 600) {
         radio.sendNumber(6)
@@ -43,7 +43,7 @@ basic.forever(function () {
             . # . . .
             # . . . .
             `)
-        basic.pause(100)
+        basic.pause(50)
         basic.clearScreen()
     } else if (KSB045.getJoystickValue(KSB045.valueType.Y) > 520 && KSB045.getJoystickValue(KSB045.valueType.X) >= 400 && KSB045.getJoystickValue(KSB045.valueType.X) < 600) {
         radio.sendNumber(2)
@@ -54,7 +54,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        basic.pause(100)
+        basic.pause(50)
         basic.clearScreen()
     } else {
         radio.sendNumber(0)
