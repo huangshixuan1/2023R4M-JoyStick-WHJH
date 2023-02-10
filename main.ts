@@ -91,7 +91,7 @@ KSB045.onBtnChanged(KSB045.btnName.E, KSB045.pushType.down, function () {
     gogo宜得利()
 })
 let pwm = 0
-radio.setGroup(1)
+radio.setGroup(200)
 basic.forever(function () {
     if (KSB045.getJoystickValue(KSB045.valueType.X) < 0) {
         radio.sendNumber(4)
