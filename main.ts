@@ -1,6 +1,3 @@
-KSB045.onBtnChanged(KSB045.btnName.C, KSB045.pushType.down, function () {
-	
-})
 KSB045.onBtnChanged(KSB045.btnName.D, KSB045.pushType.down, function () {
     radio.sendNumber(9)
     basic.showLeds(`
@@ -10,6 +7,8 @@ KSB045.onBtnChanged(KSB045.btnName.D, KSB045.pushType.down, function () {
         . . . # .
         . # # . .
         `)
+    basic.pause(100)
+    basic.clearScreen()
 })
 KSB045.onBtnChanged(KSB045.btnName.F, KSB045.pushType.down, function () {
     radio.sendNumber(7)
@@ -20,9 +19,8 @@ KSB045.onBtnChanged(KSB045.btnName.F, KSB045.pushType.down, function () {
         . . # . .
         . . # . .
         `)
-})
-KSB045.onBtnChanged(KSB045.btnName.E, KSB045.pushType.down, function () {
-	
+    basic.pause(100)
+    basic.clearScreen()
 })
 radio.setGroup(171)
 basic.forever(function () {
