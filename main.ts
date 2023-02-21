@@ -2,10 +2,24 @@ KSB045.onBtnChanged(KSB045.btnName.C, KSB045.pushType.down, function () {
 	
 })
 KSB045.onBtnChanged(KSB045.btnName.D, KSB045.pushType.down, function () {
-	
+    radio.sendNumber(9)
+    basic.showLeds(`
+        . . # . .
+        . # . # .
+        . # # # .
+        . . . # .
+        . # # . .
+        `)
 })
 KSB045.onBtnChanged(KSB045.btnName.F, KSB045.pushType.down, function () {
-	
+    radio.sendNumber(7)
+    basic.showLeds(`
+        . # # # .
+        . . . # .
+        . . # . .
+        . . # . .
+        . . # . .
+        `)
 })
 KSB045.onBtnChanged(KSB045.btnName.E, KSB045.pushType.down, function () {
 	
